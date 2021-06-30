@@ -139,4 +139,9 @@ select{
     color: rgb(30, 125, 235);
     background: white; 
 }
+@media only screen and (max-width: 768px) {
+    input{
+           width:60vw;
+    }
+  }
 
