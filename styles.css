@@ -1,0 +1,142 @@
+*
+{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background: url(mountains-1412683__340.png) no-repeat center center fixed; 
+    background-size: cover;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(14, 17, 70);
+    min-height: 100vh;
+}
+header{
+    font-size: 1.5rem;
+}
+header,form{
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form input,form button{
+  padding: .5rem;
+  border: none;
+  font-size: 2rem;
+  background: white;
+}
+.todo-input,.todo-button
+{
+    border: 1px solid white;
+}
+form button{
+    background: rgb(30, 125, 235);
+    color: white;
+    transition: .3s all ease;
+    cursor: pointer;
+}
+form button:hover
+{
+    color: rgb(30, 125, 235);
+    background: white;
+}
+.container
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.todo-list
+{
+    min-width: 30%;
+    list-style: none;
+}
+.todo{
+    margin: .5rem;
+    font-size: 1.5rem;
+    background: white;
+    border: 1px solid rgb(145, 144, 144);
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:.2rem;
+    transition: all .5s ease;
+}
+.todo li{
+    flex: 1;
+}
+.todocheck,.tododelete
+{
+    background: rgb(253, 8, 8);
+    padding: 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    color: white;
+    border: 2px solid white;
+}
+.todocheck
+{
+    background: rgb(7, 211, 0); 
+}
+.todocheck:hover
+{
+    background: white;
+    color: rgb(7, 211, 0); 
+}
+.tododelete:hover
+{
+    background: white;
+    color: rgb(253, 8, 8);
+}
+.fa-trash,.fa-check
+{
+    pointer-events: none;
+}
+.completed
+{
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+.effect
+{
+    transform: translateX(10rem) rotateX(180deg);
+    opacity: 0;
+}
+select{
+   appearance: none;
+   -moz-appearance: none;
+   -webkit-appearance: none;
+   outline: none;
+   border: none; 
+   color: rgb(30, 125, 235);
+   width:10rem;
+   cursor: pointer;
+   padding: 1rem;
+   font-weight: 900;
+}
+.select
+{
+    margin: 1rem;
+    position: relative;
+    overflow:hidden;
+}
+.select::after
+{
+    content: "\25BC";
+    position: absolute;
+    background: rgb(30, 125, 235);
+    color: white;
+    top:0;
+    right: 0;
+    padding: 1rem;
+    pointer-events: none;
+    transition:all 0.3s ease;
+}
+.select:hover::after
+{
+    color: rgb(30, 125, 235);
+    background: white; 
+}
+
